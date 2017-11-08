@@ -1,0 +1,29 @@
+{
+  "name": "greenhouse.io",
+  "version": "1.0.0",
+  "description": "CSS and Sass compiler for greenhouse.io job board",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w scss -o css",
+    "build": "node-sass --include-path node_modules static/sass --output static/css && postcss --use autoprefixer --replace static/css/**/*.css",
+    "watch": "watch -p 'static/sass/**/*.scss' -c 'npm run build'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubuntudesign/greenhouse.io.git"
+  },
+  "author": "Caleb Ellis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ubuntudesign/greenhouse.io/issues"
+  },
+  "homepage": "https://github.com/ubuntudesign/greenhouse.io#readme",
+  "dependencies": {
+    "autoprefixer": "^6.3.1",
+    "node-sass": "^4.6.0",
+    "postcss-cli": "^4.1.1",
+    "vanilla-framework": "^1.6.1",
+    "watch-cli": "^0.2.2"
+  }
+}
