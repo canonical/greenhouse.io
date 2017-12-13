@@ -365,7 +365,13 @@ div#logo {
   background-repeat: no-repeat;
   background-size: 200px 27px;
 
-  & > a > img {
-    visibility: hidden;
+  & > a { 
+    display: block; 
+    height: 27px; 
+    width: 200px; 
+    
+    & > img {
+      visibility: hidden;
+    }
   }
 }
