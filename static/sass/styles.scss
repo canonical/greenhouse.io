@@ -356,3 +356,22 @@ a.locate-me {
   height: auto !important;
   width: auto !important;
 }
+
+// Adds the word mark Canonical logo as a background on the div so the inline 'dot' logo can appear on social media
+div#logo {
+  background-color: white;
+  background-image: url('#{$assets-path}5d6da5c4-logo-canonical-aubergine.svg');
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 200px 27px;
+
+  & > a { 
+    display: block; 
+    height: 27px; 
+    width: 200px; 
+    
+    & > img {
+      visibility: hidden;
+    }
+  }
+}
