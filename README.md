@@ -13,4 +13,13 @@ npm run watch
 ```
 
 ## Deployment
+
+To generate the custom CSS, run;
+
+``` bash
+npm run build
+```
+
+A CSS file will then generated at; `static/css/styles.css`
+
 To implement the built CSS via Greenhouse's in-house job board configuration tools, navigate to the "Configure Your Job Board" page (you will need dev permission) and upload through the Custom CSS URL option.

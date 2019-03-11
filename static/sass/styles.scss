@@ -51,6 +51,11 @@ select {
 
 p + ul {
   margin: 1rem 0 1.5rem 0;
+  max-width: 610px;
+}
+
+h2 + ul {
+  padding-top: 1rem;
 }
 
 strong {
@@ -101,7 +106,10 @@ strong {
 }
 
 #content > h2 {
+  font-size: 1.75rem;
   margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0;
 }
 
 #departments-select {
@@ -110,6 +118,7 @@ strong {
 }
 
 #header {
+  margin-bottom: 2rem;
   padding-right: 0;
 }
 
@@ -125,7 +134,7 @@ strong {
 
 #footer {
   bottom: 0;
-  margin-top: 0;
+  margin-top: 2rem;
   padding-top: 1rem;
   width: 100%;
 }
@@ -365,11 +374,11 @@ div#logo {
   background-repeat: no-repeat;
   background-size: 200px 27px;
 
-  & > a { 
-    display: block; 
-    height: 27px; 
-    width: 200px; 
-    
+  & > a {
+    display: block;
+    height: 27px;
+    width: 200px;
+
     & > img {
       visibility: hidden;
     }
