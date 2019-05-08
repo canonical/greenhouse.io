@@ -178,6 +178,12 @@ strong {
     width: 100%;
   }
 
+  input[type=checkbox] {
+    float: none;
+    opacity: 1;
+    position: relative;
+  }
+
   .field-error-msg {
     padding-left: 0;
   }
